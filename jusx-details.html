@@ -81,7 +81,7 @@
                     <h2 class="fw-bold">U Ba Maw</h2>
                     <hr class="line">
                     
-                    <div class="d-flex justify-content-between jusx-text">
+                    <div class="d-md-flex justify-content-between jusx-text mb-5">
                         <div>
                             <p>
                                 <span class="fw-bold">Case Number : </span>
@@ -105,7 +105,7 @@
                         </div>
                     </div>
 
-                    <div class="jusx-text mt-4">
+                    <div class="jusx-text">
                         <p class="text-info fw-bold mb-0">Docket Activity</p>
                         <hr class="line">
                         <p>
@@ -125,19 +125,19 @@
                         </div>
                     </div>
 
-                    <div class="text-end my-5">
-                        <a href="jusx-db.html" class="btn btn-primary btn-back">Back</a>
+                    <div class="text-end">
+                        <a href="jusx-db-one.html" class="btn btn-primary btn-back">Back</a>
                     </div>
                 </div>
             </div>
 
+            <!-- Modal -->
             <div>
                 <!-- Button trigger modal -->
                 <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Launch static backdrop modal
                 </button> -->
             
-                <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -147,7 +147,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                               <form action="">
+                               <form action="" id="setRating">
 
                                     <div>
                                         <label class="text-black-50">How satisified are you with the overall experience on our website?</label>
@@ -184,7 +184,7 @@
                                </form>
                             </div>
                             <div class="modal-footer custom-footer">
-                                <button type="button" class="btn btn-primary">Submit</button>
+                                <button type="submit" form="setRating" class="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </div>

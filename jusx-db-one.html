@@ -8,7 +8,7 @@
     <title>JusX Database</title>
 
     <link rel="stylesheet" href="./Vendor/bootstrap5/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/Vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./Vendor/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./Vendor/animate_it/animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -75,10 +75,10 @@
             <div class="jusx-hero">
                 <div class="d-flex justify-content-center">
                     <div class="col-12 col-md-10">
-                        <div class="d-flex shadow-lg">
+                        <div class="d-flex shadow-sm">
                             <div class="custom-search-bar d-inline-block">
                                 <i class="fas fa-search"></i>
-                                <input type="text" placeholder="Search case here by keyword or name">
+                                <input type="text" placeholder="Search case here    ">
                             </div>
 
                             <div>
@@ -96,9 +96,137 @@
     <section class="jusx-content">
         <div class="container">
             <div class="row justify-content-center">
+
                 <div class="col-12 col-md-10">
-                    <p class="fw-bold">Search Result : <span class="text-primary">15</span></p>
+
+                    <p class="fw-bold mb-5">Search Result : <span class="text-primary">15</span></p>
+
+                    <!-- Case card -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-md-flex justify-content-between">
+                                <div>
+                                    <p>
+                                        <span class="fw-bold">Case Number : </span>
+                                        08-CB-238885
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Date : </span>
+                                        07/23/2021
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Status : </span>
+                                        Open
+                                    </p>
+                                </div>
+                            
+                                <div>
+                                    <p>
+                                        <span class="fw-bold">Location : </span>
+                                        08-CB-238885
+                                    </p>
+
+                                    <div class="float-md-end">
+                                        <a href="jusx-details.html" class="btn btn-primary mt-4">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-md-flex justify-content-between">
+                                <div>
+                                    <p>
+                                        <span class="fw-bold">Case Number : </span>
+                                        08-CB-238885
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Date : </span>
+                                        07/23/2021
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Status : </span>
+                                        Open
+                                    </p>
+                                </div>
+                    
+                                <div>
+                                    <p>
+                                        <span class="fw-bold">Location : </span>
+                                        08-CB-238885
+                                    </p>
+                    
+                                    <div class="float-md-end">
+                                        <a href="jusx-details.html" class="btn btn-primary mt-4">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-md-flex justify-content-between">
+                                <div>
+                                    <p>
+                                        <span class="fw-bold">Case Number : </span>
+                                        08-CB-238885
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Date : </span>
+                                        07/23/2021
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">Status : </span>
+                                        Open
+                                    </p>
+                                </div>
+                    
+                                <div>
+                                    <p>
+                                        <span class="fw-bold">Location : </span>
+                                        08-CB-238885
+                                    </p>
+                    
+                                    <div class="float-md-end">
+                                        <a href="jusx-details.html" class="btn btn-primary mt-4">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="mt-5 float-end custom-pagination">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item left-arrow me-3">
+                                    <a class="page-link bg-info text-white" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="page-item page-number"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item page-number"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item page-number"><a class="page-link" href="#">3</a></li>
+
+                                <li class="page-item right-arrow ms-3">
+                                    <a class="page-link bg-info text-white" href="#" aria-label="Next">
+                                        <span aria-hidden="true">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -163,22 +291,8 @@
     <script src="./Vendor/bootstrap5/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="Vendor/way_point/noframework.waypoints.js"></script>
     <script src="./Vendor/wow/wow.js"></script>
-    <script src="Js/app.js"></script>
-    <script>
-        let waypoint1 = new Waypoint({
-            element: document.getElementById('about-us'),
-            handler: function (direction) {
-                if (direction === "down") {
-                    document.getElementById("nav").classList.add("shadow-lg");
-
-                }
-                else {
-                    document.getElementById("nav").classList.remove("shadow-lg");
-                }
-            },
-            offset: "50%"
-        });
-    </script>
+    <script src="./Js/app.js"></script>
+   
 </body>
 
 </html>

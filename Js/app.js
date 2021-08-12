@@ -23,7 +23,7 @@ let timer = setInterval(function () {
 setTimeout(function () {
     clearInterval(timer);
     console.log('stop')
-}, 20000);
+}, 13000);
     
 
 // ================== Star Rating Process ==================
